@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Food App</string>
+    <string name="retry">Retry</string>
+    <string name="search_meals">Search Meals</string>
+    <string name="no_meals_found">No meals found</string>
+    <string name="resizable_text_read_more">...read more</string>
+    <string name="resizable_text_read_less">...read less</string>
+</resources>

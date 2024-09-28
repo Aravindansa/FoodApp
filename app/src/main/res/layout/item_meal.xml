@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="3dp"
+    android:layout_marginVertical="10dp"
+    android:layout_marginHorizontal="@dimen/horizontal_space"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:orientation="vertical"
+        android:paddingVertical="8dp"
+        android:paddingHorizontal="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.imageview.ShapeableImageView
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@drawable/meal_test"
+                android:layout_width="100dp"
+                android:id="@+id/imageViewMeal"
+                android:scaleType="centerCrop"
+                app:shapeAppearance="@style/RoundedImage"
+                android:adjustViewBounds="true"
+                android:layout_height="100dp"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/imageViewMeal"
+                android:layout_marginStart="6dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:id="@+id/tvMealName"
+                android:textSize="@dimen/large"
+                tools:text="Canadian Butter Tarts"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_marginStart="8dp"
+                android:id="@+id/tvCategory"
+                app:layout_constraintTop_toBottomOf="@id/tvMealName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/imageViewMeal"
+                android:textColor="@color/color_primary"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textSize="@dimen/small"
+                tools:text="Dessert"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_marginTop="3dp"
+                android:layout_marginStart="8dp"
+                android:id="@+id/tvTags"
+                app:layout_constraintTop_toBottomOf="@id/tvCategory"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/imageViewMeal"
+                android:textSize="@dimen/medium"
+                tools:text="Speciality,Snack,Desert,Pudding"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="8dp"
+                app:layout_constraintStart_toEndOf="@id/imageViewMeal"
+                app:layout_constraintTop_toBottomOf="@id/tvTags"
+                android:layout_marginTop="5dp"
+                android:textAlignment="textStart"
+                android:id="@+id/tvInstruction"
+                android:textColor="@color/black"
+                android:textSize="@dimen/medium"
+                tools:text="Preheat the oven to fan 170C."
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</com.google.android.material.card.MaterialCardView>
